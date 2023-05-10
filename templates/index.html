@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>W3schools</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{url_for('welcome')}}"><img src="{{url_for('static', filename='images/w3schools.png')}}" class="logo"></a>
+        <nav>
+            <ul id="menu">
+                <li><button id="tutorials" onclick="togglemenu()"> Tutorials  ▾ </button></li>
+                <li><button onclick="togglemenu()">Refrences  ▾</li>
+                <li><button onclick="togglemenu()">Excercises  ▾</li>
+                <li><a href="">Bootcamp  </a></li>
+                <li><a href="">Videos  </a></li>
+            </ul>
+            <ul id="nav_buttons">
+                <li><button id="navButton1"><img src="{{url_for('static', filename='images/8800781.png')}}" width="25%" id="upgradeIcon" > Upgrade</button></li>
+                <li><button id="navButton2"> Get Certified </button></li>
+                <li><button id="navButton3"> Create Website </button></li>
+            </ul>
+            <div id="signButtons">
+                <li><button id="navButton4"> Sign Up </button><button id="navButton5"> Log in </button></li>
+            </div>
+        </nav>
+    </div>
+    <ul id="menu-list">
+        <li><a href="">Game controllers</a></li>
+        <li><a href="">VR Accessories</a></li>
+        <li><a href="">Media remotes</a></li>
+        <li><a href="">Others</a></li>
+    </ul>
+
+    <section class="box1">
+        <div class="container1">
+            <h1 id="Title1">Learn to Code</h1>
+            <h3 id="subtitle1">With the world's largest web developer site.</h3>
+                  <input type="text" placeholder="Search our tutorials, e.g. HTML">
+                  <button id="submit"><img src="{{url_for('static', filename='images/search-13-64.png')}}" alt="" width="20%"></button>
+              </div>              
+            <h3 id="subtitle2">Not Sure Where To Begin?</h3>
+            <svg id="box1curve"style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+            </svg>
+    </section>
+    <section class="box2">
+        <div class="code_desc">
+            <h1 id="code_name">HTML</h1>
+            <h3 id="code_sub">The language for building web pages</h3>
+            <button id="btn1"><a href="{{url_for('html')}}">Learn HTML</a></button>
+            <button id="btn2">Video Tutorial</button>
+            <button id="btn3">HTML Refrences</button>
+            <button id="btn4">Get Certified</button>
+        </div>
+
+        <div class="embed_code">
+            <h1>HTML Example:</h1>
+            <pre id="code">
+                <code>
+            &lt!DOCTYPE html&gt           
+            &lthtml&gt
+            &lttitle>HTML Tutorial&lt/title&gt                                                    
+            &ltbody&gt       
+
+            &lth1&gtThis is a heading&lt/h1&gt
+            &ltp&gtThis is a paragraph.&lt/   
+
+            &lt/body&gt
+            &lt/html&gt
+                </code>
+            </pre>
+            <button id="btn1">Try it yourself</button>
+        </div>
+    </section>
+
+    <section class="box3">
+        <div class="code_desc">
+            <h1 id="code_name2">CSS</h1>
+            <h3 id="code_sub">The language for styling web pages</h3>
+            <button id="btn1"><a href="{{url_for('css')}}">Learn CSS</a></button>
+            <button id="btn3">CSS Reference</button>
+            <button id="btn4">Get Certified</button>
+        </div>
+
+        <div class="embed_code">
+            <h1>CSS Example:</h1>
+            <pre id="code">
+                <code>
+
+        body {
+            background-color: lightblue;                                                    
+          }     
+          
+          h1 {
+            color: white;
+            text-align: center;
+          }
+          
+          p {
+            font-family: verdana;
+          }
+                </code>
+            </pre>
+            <button id="btn1">Try it yourself</button>
+        </div>
+    </section>
+
+    <section class="box4">
+        <div class="code_desc2">
+            <h1 id="code_name2" style="color: #fff;">JavaScript</h1>
+            <h3 id="code_sub" style="color: #fff;">The language for programming web pages</h3>
+            <button id="btn1">Learn JavaScript</button>
+            <button id="btnjava">JavaScript Reference</button>
+            <button id="btn4">Get Certified</button>
+        </div>
+
+        <div class="embed_code2">
+            <h1>JavaScript Example:</h1>
+            <pre id="code">
+                <code>
+
+        &ltbutton onclick="myFunction()">Click Me!&lt/button&gt      
+
+        &ltscript&gt
+        function myFunction() {
+          let x = document.getElementById("demo");                              
+          x.style.fontSize = "25px";
+          x.style.color = "red";
+        }
+        &lt/script&gt
+                </code>
+            </pre>
+            <button id="btn1">Try it yourself</button>
+        </div>
+    </section>
+
+    <section class="box5">
+        <div class="code_desc">
+            <h1 id="code_name" style="padding-top: 90px;">Python</h1>
+            <h3 id="code_sub">A popular programming language</h3>
+            <button id="btn1">Learn Python</button>
+            <button id="btn3">Python Reference</button>
+            <button id="btn4">Get Certified</button>
+        </div>
+
+        <div class="embed_code2">
+            <h1>Python Example:</h1>
+            <pre id="code">
+                <code>
+
+            if 5 > 2:
+            print("Five is greater than two!")                                             
+
+
+
+
+
+                </code>
+            </pre>
+            <button id="btn1">Try it yourself</button>
+        </div>
+    </section>
+
+    <section class="box6">
+        <div class="code_desc">
+            <h1 id="code_name" style="padding-top: 90px;">SQL</h1>
+            <h3 id="code_sub">A language for accessing databases</h3>
+            <button id="btn1">Learn SQL</button>
+            <button id="btn3">SQL Reference</button>
+            <button id="btn4">Get Certified</button>
+        </div>
+
+        <div class="embed_code2">
+            <h1>SQL Example:</h1>
+            <pre id="code">
+                <code>
+
+        SELECT * FROM Customers                                                     
+        WHERE Country='Mexico';                                             
+
+
+
+
+
+                </code>
+            </pre>
+            <button id="btn1">Try it yourself</button>
+        </div>
+    </section>
+
+    <section class="box7">
+        <div class="card1">
+            <h1 id="card_name">PHP</h1>
+            <h3 id="card_sub">A web server programming language</h3>
+
+            <button id="btn3">Learn php</button>
+        </div>
+        
+        <div class="card2">
+            <h1 id="card_name">jQuery</h1>
+            <h3 id="card_sub">A JS library for developing web pages</h3>
+
+            <button id="btn3">Learn jQuery</button>
+        </div>
+
+        <div class="card3">
+            <h1 id="card_name">Java</h1>
+            <h3 id="card_sub">A programming language</h3>
+
+            <button id="btn3">Learn Java</button>
+        </div>
+
+        <div class="card4">
+            <h1 id="card_name">C++</h1>
+            <h3 id="card_sub">A programming language</h3>
+
+            <button id="btn3">Learn C++</button>
+        </div>
+
+        <div class="card5">
+            <h1 id="card_name">W3.CSS</h1>
+            <h3 id="card_sub">A CSS framework for faster and better responsive web pages</h3>
+
+            <button id="btn3">Learn W3.CSS</button>
+        </div>
+
+        <div class="card6">
+            <h1 id="card_name">Bootstrap</h1>
+            <h3 id="card_sub">A CSS framework for designing better web pages</h3>
+
+            <button id="btn3">Learn Bootstrap</button>
+        </div>
+
+        <div class="color-cards">
+            <div class="C-card1">
+                <h1 id="Cname">C</h1>
+            </div>
+
+            <div class="C-card2">
+                <h1 id="Cname">C#</h1>
+            </div>
+        </div>
+<!-- 
+        <div class="C-color1">
+            <h1 id="Cname">R</h1>
+        </div>
+
+        <div class="C-color2">
+            <h1 id="Cname">Kotlin</h1>
+        </div>
+
+        <div class="C-color3">
+            <h1 id="Cname">Node.js</h1>
+        </div>
+
+        <div class="C-color4">
+            <h1 id="Cname">React</h1>
+        </div> -->
+
+    </section>
+
+
+    
+
+
+
+
+
+
+
+
+    <script>
+        var menuList = document.getElementById("menu-list");
+        var text = document.getElementById("tutorials")
+
+        menuList.style.maxHeight = "0px";
+    
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px"
+                text.innerHTML = "Tutorials ▴"
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+                text.innerHTML = "Tutorials ▾"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>W3schools courses</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{url_for('welcome')}}"><img src="{{url_for('static', filename='images/w3schools.png')}}" class="logo"></a>
+        <nav>
+            <ul id="menu">
+                <li><button id="tutorials" onclick="togglemenu()"> Tutorials  ▾ </button></li>
+                <li><button onclick="togglemenu()">Refrences  ▾</li>
+                <li><button onclick="togglemenu()">Excercises  ▾</li>
+                <li><a href="">Bootcamp  </a></li>
+                <li><a href="">Videos  </a></li>
+            </ul>
+            <ul id="nav_buttons">
+                <li><button id="navButton1"><img src="{{url_for('static', filename='images/8800781.png')}}" width="25%" id="upgradeIcon" > Upgrade</button></li>
+                <li><button id="navButton2"> Get Certified </button></li>
+                <li><button id="navButton3"> Create Website </button></li>
+            </ul>
+            <div id="signButtons">
+                <li><button id="navButton4"> Sign Up </button><button id="navButton5"> Log in </button></li>
+            </div>
+        </nav>
+    </div>
+    <div class="navbar2">
+        <nav>
+            <ul id="menu">
+                <li><a href="{{url_for('html')}}" {%block active1%}{%endblock%}>HTML  </a></li>
+                <li><a href="{{url_for('css')}}"  {%block active2%}{%endblock%}>CSS</a></li>
+                <li><a href="">JAVASCRIPT</a></li>
+                <li><a href="">SQL</a></li>
+                <li><a href="">PYTHON</a></li>
+                <li><a href="">JAVA</a></li>
+                <li><a href="">PHP</a></li>
+                <li><a href="">BOOTSTRAP</a></li>
+                <li><a href="">HOW TO</a></li>
+                <li><a href="">W3.CSS</a></li>
+                <li><a href="">C</a></li>
+                <li><a href="">C++</a></li>
+                <li><a href="">REACT</a></li>
+                <li><a href="">R</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    
+        
+        <div class="sidebar">
+            <h2 id="head">HTML TUTORIAL</h2>
+            <ul>
+                <li><a href="" id="active">HTML HOME</a></li> 
+                <li><a href="">HTML Introduction</a></li>
+                <li><a href="">HTML Editors</a></li>
+                <li><a href="">HTML Basic</a></li>
+                <li><a href="">HTML Elements</a></li>
+                <li><a href="">HTML Attributes</a></li>
+                <li><a href="">HTML Headings</a></li>
+                <li><a href="">HTML Paragraphs</a></li>
+                <li><a href="">HTML styles</a></li>
+                <li><a href="">HTML Formatting</a></li>
+                <li><a href="">HTML Quotations</a></li>
+                <li><a href="">HTML Comments</a></li>
+                <li><a href="">HTML Colors</a></li>
+                <li><a href="">HTML CSS</a></li>
+                <li><a href="">HTML Links</a></li>
+                <li><a href="">HTML Images</a></li>
+                <li><a href="">HTML Favicon</a></li>
+                <li><a href="">HTML Page Title</a></li>
+                <li><a href="">HTML Tables</a></li>
+                <li><a href="">HTML Lists</a></li>
+                <li><a href="">HTML Block & Inline</a></li>
+                <li><a href="">HTML Classes</a></li>
+                <li><a href="">HTML ld</a></li>
+                <li><a href="">HTML Iframes</a></li>
+                <li><a href="">HTML JavaScript</a></li>
+                <li><a href="">HTML File Paths</a></li>
+                <li><a href="">HTML Head</a></li>
+                <li><a href="">HTML Layout</a></li>
+                <li><a href="">HTML Responsive</a></li>
+            </ul>
+
+        </div>
+        <div class="mainbar">
+            {% block content %}{% endblock %}
+        </div>
+
+
+        
+
+</body>
+</html>
